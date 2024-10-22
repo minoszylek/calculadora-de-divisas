@@ -58,7 +58,7 @@ public class Tools {
 
     public void conversionCalculation () throws IOException, InterruptedException {
        CallToApi conversion = new CallToApi(this.currencys.get(currency1), this.currencys.get(currency2), amount);
-        ConversionOmdb callToApiConversion = gson.fromJson(conversion.getJson(), ConversionOmdb.class);
+        ConversionExchangeRate callToApiConversion = gson.fromJson(conversion.getJson(), ConversionExchangeRate.class);
         Querie querie = new Querie(callToApiConversion, amount);
         queriesList.add(querie);
         System.out.println("El objeto: "+ querie);

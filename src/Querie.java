@@ -9,7 +9,7 @@ public class Querie {
     private final BigDecimal conversionRate;
     private final BigDecimal conversionResult;
     //Este metod recibe el objeto ConversionOmdb y el valor que el usuario desea convertir.
-    public Querie (ConversionOmdb conversion, BigDecimal amount) {
+    public Querie (ConversionExchangeRate conversion, BigDecimal amount) {
         this.currencyBase = conversion.base_code();
         this.currencyTarget = conversion.target_code();
         this.conversionRate = new BigDecimal(conversion.conversion_rate()) //Redonde a dos decimales.
