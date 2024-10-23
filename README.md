@@ -14,6 +14,7 @@ Guarda un registro durante la ejecución de cada consulta realizada.</p>
 <li>Interfaz en consola.</li>
 <li>Registro de consultas por ejecución.</li>
 <h2 align="left"> Requisitos </h2>
+<li>Conexión a internet.</li>
 <li>JAVA 17.0.12 o superior.</li>
 <li>Librería Gson 2.10.1.</li>
 <h2 align="left"> Instalación </h2>
