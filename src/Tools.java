@@ -31,7 +31,6 @@ public class Tools {
                 6. CLP      Peso Chileno               Chile
                 7. EUR      Euro                       Unión Europea
                 
-                8. < Atrás
                 9. Salir
                 ***********************
                 """;
@@ -61,7 +60,7 @@ public class Tools {
         ConversionExchangeRate callToApiConversion = gson.fromJson(conversion.getJson(), ConversionExchangeRate.class);
         Querie querie = new Querie(callToApiConversion, amount);
         queriesList.add(querie);
-        System.out.println("El objeto: "+ querie);
+        System.out.println(querie);
     }
     //Este métod se usa para construir los menús del usuario.
     public void menuSelector (String menu, List<Integer> options) {
